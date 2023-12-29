@@ -43,11 +43,10 @@ fn main() {
                         .italic()
                         .bold(),
                 );
-                if C == u128::MAX - 1 {
+                C = C.checked_add(1).unwrap_or_else(|| {
                     OVERFLOW_TIMES += 1;
-                    C = 0;
-                }
-                C += 1
+                    0
+                });
             }
         }
     }
