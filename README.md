@@ -8,7 +8,7 @@ I think that someone might also be interested in finding out how long it will ta
 
 ### How it looks? Examles:
 
-##### Log file:
+#### Log file:
 ```log
 [Times:  0] ::: [Attemp at this time: 1      ] ::: [Current text: f            ] ::: [Current time: 29/12/2023 03:01:48]
 [Times:  0] ::: [Attemp at this time: 3      ] ::: [Current text: fn           ] ::: [Current time: 29/12/2023 03:01:48]
@@ -18,7 +18,7 @@ I think that someone might also be interested in finding out how long it will ta
 [Times:  0] ::: [Attemp at this time: 103591 ] ::: [Current text: fn mai       ] ::: [Current time: 29/12/2023 03:02:02]
 ```
 
-##### Terminal output:
+#### Terminal output:
 ```bash
 attemps: 34076 ::: max: fn ::: time: 29/12/2023 03:04:18
 attemps: 34077 ::: max: fn ::: time: 29/12/2023 03:04:18
@@ -35,7 +35,7 @@ attemps: 34082 ::: max: fn ::: time: 29/12/2023 03:04:18
 * Don't forget to change alphabet of unique symbols that contains in your answer phrase. (You can you built-in function `create_alphabet` for this)
 
 ### Contributing:
-##### I will be very happy
+#### I will be very happy
 
 * if you want to make the code better or more readable
 * if you offer new interesting and useful functionality
