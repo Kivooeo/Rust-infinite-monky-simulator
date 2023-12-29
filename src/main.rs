@@ -12,7 +12,7 @@ static mut OVERFLOW_TIMES: u128 = 0;
 static mut MAX: u8 = 0;
 
 fn main() {
- let mut answer = String::new();
+    let mut answer = String::new();
     let mut count = 0;
     let mut time: chrono::prelude::DateTime<chrono::prelude::Local> = chrono::offset::Local::now();
     loop {
