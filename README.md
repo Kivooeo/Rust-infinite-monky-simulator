@@ -33,3 +33,9 @@ attemps: 34082 ::: max: fn ::: time: 29/12/2023 03:04:18
 * So, to use your phrases, you have to change consts inside the source code. 
 * You can also change the path to log file and it name.
 * Don't forget to change alphabet of unique symbols that contains in your answer phrase. (You can you built-in function `create_alphabet` for this)
+
+### Contributing
+##### I will be very happy
+
+* if you want to make the code better or more readable
+* if you offer new interesting and useful functionality
