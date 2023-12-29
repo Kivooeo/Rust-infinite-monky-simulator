@@ -8,17 +8,17 @@ I think that someone might also be interested in finding out how long it will ta
 
 ### How it looks? Examles:
 
-Log file:
+##### Log file:
 ```log
-[Times:  0] ::: [Attemp at this time: 1                             ] ::: [Current text: f            ] ::: [Current time: 29/12/2023 03:01:48]
-[Times:  0] ::: [Attemp at this time: 3                             ] ::: [Current text: fn           ] ::: [Current time: 29/12/2023 03:01:48]
-[Times:  0] ::: [Attemp at this time: 42                            ] ::: [Current text: fn           ] ::: [Current time: 29/12/2023 03:01:48]
-[Times:  0] ::: [Attemp at this time: 2938                          ] ::: [Current text: fn m         ] ::: [Current time: 29/12/2023 03:01:49]
-[Times:  0] ::: [Attemp at this time: 77939                         ] ::: [Current text: fn ma        ] ::: [Current time: 29/12/2023 03:01:59]
-[Times:  0] ::: [Attemp at this time: 103591                        ] ::: [Current text: fn mai       ] ::: [Current time: 29/12/2023 03:02:02]
+[Times:  0] ::: [Attemp at this time: 1      ] ::: [Current text: f            ] ::: [Current time: 29/12/2023 03:01:48]
+[Times:  0] ::: [Attemp at this time: 3      ] ::: [Current text: fn           ] ::: [Current time: 29/12/2023 03:01:48]
+[Times:  0] ::: [Attemp at this time: 42     ] ::: [Current text: fn           ] ::: [Current time: 29/12/2023 03:01:48]
+[Times:  0] ::: [Attemp at this time: 2938   ] ::: [Current text: fn m         ] ::: [Current time: 29/12/2023 03:01:49]
+[Times:  0] ::: [Attemp at this time: 77939  ] ::: [Current text: fn ma        ] ::: [Current time: 29/12/2023 03:01:59]
+[Times:  0] ::: [Attemp at this time: 103591 ] ::: [Current text: fn mai       ] ::: [Current time: 29/12/2023 03:02:02]
 ```
 
-Terminal output:
+##### Terminal output:
 ```bash
 attemps: 34076 ::: max: fn ::: time: 29/12/2023 03:04:18
 attemps: 34077 ::: max: fn ::: time: 29/12/2023 03:04:18
@@ -29,12 +29,12 @@ attemps: 34081 ::: max: fn ::: time: 29/12/2023 03:04:18
 attemps: 34082 ::: max: fn ::: time: 29/12/2023 03:04:18
 ```
 
-## Important things
+### Important things:
 * So, to use your phrases, you have to change consts inside the source code. 
 * You can also change the path to log file and it name.
 * Don't forget to change alphabet of unique symbols that contains in your answer phrase. (You can you built-in function `create_alphabet` for this)
 
-### Contributing
+### Contributing:
 ##### I will be very happy
 
 * if you want to make the code better or more readable
