@@ -2,6 +2,7 @@ use chrono;
 use colored::*;
 use rand::{thread_rng, Rng};
 use std::fs::OpenOptions;
+use std::io::Write;
 
 const CHARS: &'static str = "ni{}(maf)";
 const PATH: &str = "./ascvbnkl";
@@ -63,8 +64,6 @@ fn check_char(ch: char, c: usize) -> bool {
     ANSWER.chars().nth(c).unwrap() == ch
 }
 
-use std::io::Write;
-
 fn add_try() {
     let mut file = OpenOptions::new()
         .create(true)
@@ -84,4 +83,11 @@ fn add_try() {
             eprintln!("Couldn't write to file: {}", e);
         }
     }
+}
+
+#[allow(dead_code)]
+fn create_alphabet(x: &str) -> String {
+    std::collections::HashSet::<_>::from_iter(x.chars())
+        .iter()
+        .collect()
 }
