@@ -21,7 +21,6 @@ static mut OVERFLOW_TIMES: u128 = 0;
 static mut MAX: u8 = 0;
 
 fn main() {
-    println!("{:?}", std::env::current_dir());
     // Start function, Do not ask me about this.
     _start();
 }
