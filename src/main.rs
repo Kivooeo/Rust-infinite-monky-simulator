@@ -7,9 +7,9 @@ use rand::{thread_rng, Rng};
 // For open file with append mode
 use std::fs::OpenOptions;
 // Here is alphabet, all symbols that contains in string that you want to generate
-const CHARS: &'static str = "fnm ai{}()";
+const CHARS: &'static str = "ni{}(maf)";
 // Path to log file
-const PATH: &str = "./log";
+const PATH: &str = "./ascvbnkl";
 // the phrase you want to give the monkey so that it can guess it
 const ANSWER: &str = "fn main(){}";
 // Attemps counter
@@ -21,6 +21,7 @@ static mut OVERFLOW_TIMES: u128 = 0;
 static mut MAX: u8 = 0;
 
 fn main() {
+    // println!("{}", create_alphabet("fn main(){}"));
     // Start function, Do not ask me about this.
     _start();
 }
@@ -120,13 +121,21 @@ fn add_try() {
         .open(PATH)
         .unwrap();
     unsafe {
+        let temp = MAX as usize;
+
         if let Err(e) = writeln!(
             file,
-            "[Times: {:>2}] ::: [Attemp at this time: {:<30}] ::: [Current text: {:<13}] ::: [Current time: {}]",
+            "[Times: {:>2}] ::: [Attemp at this time: {:<39}] ::: [Current text: {:<temp$}] ::: [Current time: {}]",
             OVERFLOW_TIMES, C, &ANSWER[0..MAX as usize], chrono::offset::Local::now().format("%d/%m/%Y %H:%M:%S")
             .to_string()
         ) {
             eprintln!("Couldn't write to file: {}", e);
         }
     }
+}
+
+fn create_alphabet(x: &str) -> String {
+    std::collections::HashSet::<_>::from_iter(x.chars())
+        .iter()
+        .collect()
 }
