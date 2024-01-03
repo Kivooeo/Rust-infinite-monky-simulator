@@ -39,8 +39,3 @@ attemps: 34082 ::: max: fn ::: time: 29/12/2023 03:04:18
 
 * aim to enhance the code's quality and readability
 * propose new and interesting functionalities
-
-
-### Conclusion:
----
-Created more as a playful endeavor than a serious project, this repository is inspired by the whimsical notion of an infinite monkey. There's no profound scientific pursuit here, but rather room for creativity, experimentation, and amusement. Let's have some fun, and perhaps amidst this lighthearted process, someone might stumble upon something intriguing or inspiring!
